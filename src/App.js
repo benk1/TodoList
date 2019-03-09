@@ -28,7 +28,7 @@ class App extends Component {
       })
     })
 }
-
+// Delete single todo
 delTodo = (id) =>{
   axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
   .then(res => this.setState({
